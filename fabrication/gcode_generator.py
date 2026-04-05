@@ -1,3 +1,2 @@
-# JuniorCloud LLC Community Edition\nclass GCodeGenerator:
-    @staticmethod
-    def optimize_and_generate(m, o='out.gcode', s=None): return o
+# JuniorOmega Community Edition (Public Release)
+class GCodeGenerator: pass
