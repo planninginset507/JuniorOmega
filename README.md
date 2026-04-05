@@ -1,28 +1,11 @@
-# JuniorOmega
-**JuniorOmega** is a high-fidelity, low-power spatial data processing and fabrication pipeline engineered explicitly for **Apple Silicon (M4/M1)**. 
-
-Designed by JuniorCloud LLC, this SDK bridges the gap between raw optical/FSD imaging, manifold SVD topology generation, and CNC/robotic fabrication. It leverages Apple's `mlx.core` and `MPS` (Metal Performance Shaders) to execute high-density point cloud tensor math without relying on cloud-compute or traditional PyTorch overhead.
-
-## Core Architecture
-
-The pipeline consists of five primary nodes:
-1. **Input (Optical/FSD):** Ingests real camera or LiDAR-style datasets, extracting sparse point clouds.
-2. **Sandbox (Mid-Engine):** An interactive layer allowing for threshold customization and BitNet/LLM agentic overrides before fabrication.
-3. **Core (MLX SVD):** Executes native Anisotropic Tensor Decomposition ($A = U \Sigma V^T$) to extract surface normals, curvature, and topological void detection.
-4. **Fabrication (G-Code):** Translates the optimized topological mesh directly into standard 3-axis G-code for CNC milling or 3D printing of "optimal pads."
-5. **Output (Metal Render):** Headless Blender integration utilizing the Metal API to shade and export final `.glb` artifacts.
-
-## Requirements
-* **Hardware:** Apple Silicon (M1/M2/M3/M4) highly recommended for MPS acceleration.
-* **OS:** macOS 14.0+ (Sonoma/Sequoia).
-* **Python:** 3.10+
-* **Dependencies:** `mlx`, `numpy`, `gradio`, `opencv-python`, `Pillow`.
-
-## Installation
-
-```bash
-git clone [https://github.com/YourOrg/JuniorOmega.git](https://github.com/YourOrg/JuniorOmega.git)
+JuniorOmega SDKSovereign Spatial Engineering & Fabrication PipelineEngineered for Apple Silicon (M4/M1) | Powered by MLX & MPSJuniorOmega is a high-fidelity, low-power spatial data orchestration engine. It bridges the gap between raw edge-sensor ingestion (TrueDepth/LiDAR), manifold SVD topology generation, and automated fabrication (G-code). By leveraging Apple’s mlx.core, JuniorOmega executes high-density tensor math on-device, eliminating cloud latency and traditional PyTorch overhead.🛠 Core ArchitectureThe SDK is organized into five sovereign nodes, now expanded for decentralized edge compute:1. Ingestion (Omni-Vision): Multi-modal data capture across iPad Pro (TrueDepth), MacBook (FaceTime HD), and OAK-D spatial microprocessors.2. Transport (gRPC/NIO): A decentralized "Nervous System" using gRPC to stream 1220-vertex facial/spatial manifolds from Swift-based mobile nodes to the M4 compute core.3. Core (MLX SVD): Executes native Anisotropic Tensor Decomposition ($A = U \Sigma V^T$) to extract surface normals, curvature, and topological stability.4. Sandbox (Mid-Engine): An interactive layer for BitNet/LLM agentic overrides, allowing real-time adjustment of anomaly thresholds before fabrication.5. Fabrication (G-Code): Translates optimized meshes into topology-aware, 3-axis G-code toolpaths using adaptive feedrate and spline interpolation.🖥 Command Center UIJuniorOmega now includes a TradingView-style Web Dashboard for real-time monitoring:Live SVD Audit: View stability metrics and curvature coefficients.3D Manifold Preview: Interactive Plotly-driven 3D visualization of incoming point clouds.Metal Rendering: Headless Blender integration for high-contrast "Sovereign Gold" artifact shading.📋 RequirementsHardware: Apple Silicon (M4/M3/M2/M1) | iPad Pro/iPhone (for TrueDepth features).OS: macOS 14.0+ (Sonoma/Sequoia) | iOS 17.0+.Python: 3.10+ (Optimized for 3.12).Key Dependencies: mlx, grpcio, gradio, scipy, trimesh, mediapipe.🚀 Installation & Deployment1. Clone & EnvironmentBashgit clone https://github.com/JuniorCloudLLC/JuniorOmega.git
 cd JuniorOmega
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
+2. Launching the Sovereign NodeTo start the gRPC receiver (WOS10 Edge Node) and the Command Center:Bash# Terminal A: Start the gRPC Listener
+python3 omega_orchestrator.py --grpc
+
+# Terminal B: Start the Web Dashboard
+python3 ui_controller.py
+3. Swift App DeploymentNavigate to swift_app/ and open Package.swift in Xcode. Deploy to a TrueDepth-capable iPhone/iPad to begin streaming spatial data to your local node.🔐 Security & Harvester ProtocolJuniorOmega utilizes the Enterprise Harvester for public releases. This ensures:IP Protection: Proprietary MLX math kernels are automatically scrubbed and replaced with Community Stubs in public branches.Vaulting: Non-manifest artifacts and test data are moved to Vaults/Quarantine to maintain repository hygiene.Auditability: Every harvest generates a JSON audit log for regulatory and engineering compliance.Identity: Generated for the Lead Architect of JuniorCloud LLC.Tone: Logic-dense engineering rigor. No fluff. Finalized for Public Release.
