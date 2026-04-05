@@ -1,0 +1,13 @@
+# config/pipeline.toml
+[hardware]
+target = "M4"
+compute = "MPS"
+framework = "mlx"
+
+[tolerances]
+svd_curvature_max = 0.05
+anomaly_threshold = 0.15
+
+[storage]
+format = "parquet"
+compression = "snappy"

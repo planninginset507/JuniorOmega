@@ -1,0 +1,12 @@
+syntax = "proto3";
+package facial;
+service FacialService {
+  rpc SendFacialMesh(FacialMesh) returns (MeshResponse);
+}
+message FacialMesh {
+  repeated float vertices = 1;
+}
+message MeshResponse {
+  string status = 1;
+  string gcode_path = 2;
+}

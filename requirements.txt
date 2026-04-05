@@ -1,0 +1,11 @@
+mlx
+scipy
+trimesh
+rhino3dm
+mediapipe>=0.10.0
+opencv-python
+depthai
+grpcio
+grpcio-tools
+plotly
+gradio
